@@ -1,8 +1,9 @@
-n = int(input("Введите 1-е число: "))
-m = int(input("Введите 2-е число: "))
-if n > m:
-    print(f'Число {n} больше чем {m}.')
-elif n < m:
-    print(f'Число {m} больше чем {n}.')
-else:
-    print('Числа равны')    
+data_dict = {"Валерия" : 25, "Сергей" : 33, "Татьяна" : [21, 32],
+             "Меружан" : 27}
+data_dict["Sergei"] = 27
+data_dict["Julia"] = 20
+data_dict["Kirill"] = 32
+data_dict["Polin"] = 19
+for key in data_dict:
+    print(key, data_dict[key])
+
