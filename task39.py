@@ -16,3 +16,4 @@ for i in list1:
     if i not in list2:
         result.append(i)
 print(result)        
+print([i for i in list1 if i not in list2])
