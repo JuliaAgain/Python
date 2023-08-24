@@ -21,7 +21,7 @@ def correction_data():
     file_name = input()
     data = open(file_name + '.txt', 'r', encoding='utf-8')  
     data_list = data.read().split()
-    print(data.read())
+    print(*data_list)
     data.close()
     print("Что выхотите изменить в файле?")
     print("0 - все данные\n"
