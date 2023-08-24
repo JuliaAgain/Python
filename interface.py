@@ -30,7 +30,9 @@ tele03 = ' '.join(tele03)
 data = open('data03.txt', 'w', encoding = 'utf-8')
 data.writelines(tele03)
 data.close()
-from loggers import find_data, new_data, correction_data
+
+import os
+from loggers import find_data, new_data, correction_data, delete_data
 def interface():
     print("Здравствуйте!")
     print("Вы находитесь в меню справочника. Выберите одну из команд.")
@@ -49,6 +51,8 @@ def interface():
             new_data()
         elif  command == 3:
             correction_data()
+        elif command == 4:
+            delete_data()
         elif command == 5:
             print("Всего хорошего!")
             return       
