@@ -23,7 +23,7 @@ def correction_data():
     data_list = data.read().split()
     print(*data_list)
     data.close()
-    print("Что выхотите изменить в файле?")
+    print("Что Вы хотите изменить в этом файле?")
     print("0 - все данные\n"
           "1 - фамилию\n"
           "2 - имя\n"
